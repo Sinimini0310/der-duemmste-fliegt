@@ -8,7 +8,7 @@
 
 <script setup>
 import { ref, onMounted, getCurrentInstance } from 'vue'
-import axios from 'axios'
+import { api } from 'boot/axios'
 import { useRoute } from 'vue-router'
 import { useGameStore } from 'stores/game'
 
@@ -18,7 +18,7 @@ const question = ref('')
 const answer = ref('')
 
 onMounted(async () => {
-  const { data } = await axios.get('/api/questions/random', {
+  const { data } = await api.get('/questions/random', {
     params: { lobbyId: route.params.id },
   })
   question.value = data.text
