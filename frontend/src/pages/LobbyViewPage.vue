@@ -13,7 +13,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import axios from 'axios'
+import { api } from 'boot/axios'
 import { useRoute, useRouter } from 'vue-router'
 import { useGameStore } from 'stores/game'
 
@@ -24,7 +24,7 @@ const lobby = ref({ players: [] })
 const isHost = ref(false)
 
 onMounted(async () => {
-  const { data } = await axios.get(`/api/lobbies/${route.params.id}`)
+  const { data } = await api.get(`/lobbies/${route.params.id}`)
   lobby.value = data
   store.setLobby(data)
   isHost.value = data.players[0]?.id === store.player?.id

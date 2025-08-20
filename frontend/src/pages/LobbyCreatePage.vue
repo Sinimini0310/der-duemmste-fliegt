@@ -10,7 +10,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import axios from 'axios'
+import { api } from 'boot/axios'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
@@ -20,7 +20,7 @@ const roundSeconds = ref(120)
 const spectatorVoting = ref(true)
 
 const createLobby = async () => {
-  const { data } = await axios.post('/api/lobbies', {
+  const { data } = await api.post('/lobbies', {
     hostName: name.value,
     settings: {
       hearts: hearts.value,
