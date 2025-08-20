@@ -1,10 +1,6 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    />
+  <q-page class="column flex flex-center q-gutter-md">
+    <q-btn label="Create Lobby" color="primary" to="/create" />
   </q-page>
 </template>
 
