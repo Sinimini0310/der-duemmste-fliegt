@@ -1,8 +1,8 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header elevated class="palenight-header">
       <q-toolbar>
-        <q-toolbar-title>Der dümmste fliegt</q-toolbar-title>
+        <q-toolbar-title class="text-white">Der dümmste fliegt</q-toolbar-title>
       </q-toolbar>
     </q-header>
     <q-page-container>

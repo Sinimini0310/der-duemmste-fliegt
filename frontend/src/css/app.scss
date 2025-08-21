@@ -3,3 +3,15 @@ body {
   background: linear-gradient(180deg, #292d3e 0%, #1b1e2b 100%);
   color: #ffffff;
 }
+
+/* palenight header with dark gradient */
+.palenight-header {
+  background: linear-gradient(90deg, #292d3e 0%, #1b1e2b 100%);
+  color: #ffffff;
+}
+
+/* keep page content centered for better readability */
+.q-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
