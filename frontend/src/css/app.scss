@@ -1,5 +1,9 @@
 // app global css in SCSS form
-body {
+.palenight-gradient {
   background: linear-gradient(180deg, #292d3e 0%, #1b1e2b 100%);
+}
+
+body {
+  @extend .palenight-gradient;
   color: #ffffff;
 }
