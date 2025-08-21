@@ -1,5 +1,7 @@
 // app global css in SCSS form
 body {
-  background: linear-gradient(180deg, #292d3e 0%, #1b1e2b 100%);
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1b1e2b 0%, #292d3e 100%);
+  background-attachment: fixed;
   color: #ffffff;
 }
