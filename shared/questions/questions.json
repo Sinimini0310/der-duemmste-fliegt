@@ -1,0 +1,16 @@
+{
+  "$schema": "./questions.schema.json",
+  "meta": { "version": 1, "locale": "de", "category": "general" },
+  "questions": [
+    {
+      "id": "q-0001",
+      "type": "single",
+      "text": "Wie heißt die Hauptstadt von Australien?",
+      "choices": null,
+      "answer": "Canberra",
+      "difficulty": "easy",
+      "tags": ["geo"],
+      "timeLimitSec": 20
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "game": {
+    "minPlayers": 2,
+    "maxPlayers": 20,
+    "startHearts": 3,
+    "hostCanVote": false,
+    "spectatorVoting": true,
+    "questionOrder": "round_robin",
+    "answerTimeSec": 25,
+    "roundTargetQPerPlayer": 2,
+    "roundDurationMin": [2, 3],
+    "roundDurationGranularitySec": 30,
+    "finale": { "mode": "same_questions", "bestOf": 7, "timePerQSec": 20 }
+  },
+  "tieBreak": {
+    "enable": true,
+    "revoteLimit": 1,
+    "estimateQuestionPool": "estimate_questions.json",
+    "compareMode": "closest_wins"
+  },
+  "voting": {
+    "anonymized": true,
+    "showResultsPublic": true,
+    "allowSelfVote": false
+  },
+  "moderation": {
+    "enableProfanityFilter": true,
+    "blockedNames": ["admin", "host"]
+  },
+  "ui": {
+    "enableSfx": true,
+    "showAnswerReplay": true,
+    "theme": "system"
+  }
+}

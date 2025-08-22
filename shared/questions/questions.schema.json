@@ -1,0 +1,39 @@
+{
+  "$id": "questions.schema.json",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "integer" },
+        "locale": { "type": "string" },
+        "category": { "type": "string" }
+      },
+      "required": ["version", "locale"]
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "type": { "type": "string", "enum": ["single", "multi", "open"] },
+          "text": { "type": "string" },
+          "choices": { "type": ["array", "null"], "items": { "type": "string" } },
+          "answer": {
+            "oneOf": [
+              { "type": "string" },
+              { "type": "array", "items": { "type": "string" } },
+              { "type": "null" }
+            ]
+          },
+          "difficulty": { "type": "string", "enum": ["easy", "medium", "hard"] },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "timeLimitSec": { "type": "integer" }
+        },
+        "required": ["id", "type", "text"]
+      }
+    }
+  },
+  "required": ["meta", "questions"]
+}
