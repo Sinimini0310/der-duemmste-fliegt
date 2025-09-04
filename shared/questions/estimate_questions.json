@@ -1,0 +1,11 @@
+{
+  "questions": [
+    {
+      "id": "e-001",
+      "prompt": "Wie viele Liter Bier wurden 2023 in Deutschland pro Kopf konsumiert?",
+      "unit": "L",
+      "hint": "Zweistellig",
+      "timeLimitSec": 25
+    }
+  ]
+}

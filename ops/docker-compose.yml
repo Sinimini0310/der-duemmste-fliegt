@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: ops/backend.Dockerfile
+    ports:
+      - '8080:8080'
+  realtime:
+    build:
+      context: ..
+      dockerfile: ops/realtime.Dockerfile
+    ports:
+      - '8081:8081'
+  frontend:
+    build:
+      context: ..
+      dockerfile: ops/frontend.Dockerfile
+    ports:
+      - '9000:9000'
